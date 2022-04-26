@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    background-color: #191b1f;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.header .logoMain{
+    color: #c68332;
+}
+
+.header h1{
+    color: aliceblue;
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+.contenedorBuscador{
+    margin-left: 110px;
+    display: flex;
+}
+
+.contenedorBuscador input{
+    border-radius: 5px;
+    width: 300px;
+    height: 33px;
+    padding-left: 10px;
+    font-size: 20px;
+    caret-color: #e8a450;
+    color:#eeee ;
+    background-color:#191b1f ;
+    box-shadow: none;
+    border: 1px solid #c68332; 
+}
+input:focus {
+    outline: 0;
+    
+}
+ input:active {
+    outline: 0;
+    
+}
+
+.contenedorBuscador button{
+    background-color: rgb(27, 173, 218);
+    padding: 5px 15px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 5px; 
+    /* margin-top: 13px; */
+}
+
+.contenedorBuscador .lupa{
+    color: rgb(251, 251, 251);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+/*media querys*/
+
+@media only screen and (max-width: 778px){
+
+    .header h1{
+        font-size: 30px;
+        margin-left: 40px;
+    }
+    .contenedorBuscador{
+        margin-left: 90px;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 681px){
+    .header h1{
+        font-size: 28px;
+        margin-left: 30px;
+    }
+    .contenedorBuscador{
+        margin-left: 70px;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 641px){
+    .header h1{
+        font-size: 24px;
+        margin-left: 30px;
+    }
+    .contenedorBuscador{
+        margin-left: 70px;
+    }
+
+    .contenedorBuscador input{
+        width: 250px;
+        height: 33px;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .header h1{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width: 557px){
+    .header h1{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .contenedorBuscador button{
+        padding: 3px 10px;
+    }
+    .contenedorBuscador .lupa{
+        color: rgb(251, 251, 251);
+        font-size: 17px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 506px) {
+   
+    .header h1{
+        color: aliceblue;
+        font-size: 19px;
+        margin-left: 20px;
+    }
+
+  
+    .contenedorBuscador input{
+        border-radius: 5px;
+        border: none;
+        width: 150px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+   
+      .contenedorBuscador{
+        margin-left: 45px;
+    }
+}
+
+@media only screen and (max-width: 393px){
+    
+    .header h1{
+        font-size: 18px;
+    }
+
+    .contenedorBuscador{
+        margin-left: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 360px){
+
+    .header h1{
+        font-size: 16px;
+    }
+
+    .contenedorBuscador{
+        margin-left: 14px;
+    }
+
+    .contenedorBuscador input{
+        border-radius: 5px;
+        border: none;
+        width: 150px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 322px){
+
+    .contenedorBuscador input{
+        border-radius: 5px;
+        border: none;
+        width: 120px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 292px){
+
+    .header h1{
+        font-size: 15px;
+    }
+
+    .contenedorBuscador input{
+        border-radius: 5px;
+        border: none;
+        width: 100px;
+        height: 25px;
+    }
+
+    .contenedorBuscador button{
+        padding: 3px 10px;
+    }
+
+    .contenedorBuscador .lupa{
+        font-size: 10px;
+    }
+
+    
+}
