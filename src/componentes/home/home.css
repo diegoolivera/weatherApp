@@ -3,7 +3,6 @@
     display: grid;
     margin-top: 30px;
     grid-template-columns:repeat(3, 1fr);
-    /* grid-template-rows: repeat(2,1fr); */
     place-items: center;
     margin-left: 30px;
 }
@@ -14,6 +13,10 @@
     border-radius: 18px;
     border: 1px solid rgb(250, 246, 246);
     color: #eeeeee;
+}
+
+.card:hover .climate{
+    color:#c68332
 }
 
 .headerCard{
@@ -96,6 +99,8 @@ footer{
     color: #fbfcff;
     margin-right: 5px;
     display: inline-block;
+    padding-right: 5px;
+    cursor: pointer;
     
 }
 
