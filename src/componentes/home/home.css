@@ -1,11 +1,11 @@
 .grid{
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 50px ;
-    /* margin-left: 30px; */
-    place-content: center;
-    
-
+    margin-top: 30px;
+    grid-template-columns:repeat(3, 1fr);
+    /* grid-template-rows: repeat(2,1fr); */
+    place-items: center;
+    margin-left: 30px;
 }
 .card{
     background-color: #191b1f;
@@ -102,5 +102,6 @@ footer{
 @media only screen and (max-width: 600px){
     .grid{
         grid-template-columns: 1fr;
+        margin-left: 0;
     }
 }

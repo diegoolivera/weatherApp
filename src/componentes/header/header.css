@@ -37,10 +37,10 @@
     padding-left: 10px;
     font-size: 20px;
     caret-color: #e8a450;
-    color:#eeee ;
-    background-color:#191b1f ;
     box-shadow: none;
-    border: 1px solid #c68332; 
+    border: 1px solid #c68332;
+    background-color: #eeee;
+    color: #191b1f;  
 }
 input:focus {
     outline: 0;
@@ -83,6 +83,7 @@ input:focus {
         margin-left: 90px;
         display: flex;
     }
+    
 }
 
 @media only screen and (max-width: 681px){
