@@ -1,0 +1,97 @@
+.card{
+    background-color: #191b1f;
+    height: 350px;
+    width: 220px;
+    border-radius: 18px;
+    border: 1px solid rgb(250, 246, 246);
+    color: #eeeeee;
+}
+
+.card:hover .climate{
+    color:#c68332
+}
+
+.headerCard{
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 16px;
+    border:  1px black solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.cityName{
+    margin-left: 25px;
+}
+
+
+.contentCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    margin-top: 10px;
+    font-size: 70px;
+}
+
+.grades{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+
+    
+}
+
+.climate{
+    margin-top: 3px;
+}
+
+
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 15px;
+    -webkit-box-shadow: -6px 11px 16px 1px rgba(47,48,54,0.71); 
+    box-shadow: -6px 11px 16px 1px rgba(47,48,54,0.71);
+    
+}
+.contentDates{
+    margin: 0 10px;
+    
+}
+
+.contentDates .description{
+    font-size: 16px;
+    color: #eeeeee;
+}
+
+.datesLogo{
+    font-size: 26px;
+}
+
+.date{
+    font-size: 15px;
+}
+.humidiy{
+    color: #74c7f7;
+}
+
+.cross{
+    color: #fbfcff;
+    margin-right: 5px;
+    display: inline-block;
+    padding-right: 5px;
+    cursor: pointer;
+    
+}

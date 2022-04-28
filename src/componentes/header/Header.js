@@ -29,7 +29,7 @@ const Header = ({searchCity}) => {
     <header className='header'>
       <h1><BsFillCloudSunFill className='logoMain'/>WheaterApp</h1>
       <div  className='contenedorBuscador'>
-        <input ref={inputCity} type="search" onKeyUp={enter} pattern='[a-z]*' placeholder='localidad..' autocomplete="off" id='search' onChange={(e)=> setCity( e.target.value )} />
+        <input ref={inputCity} type="search" onKeyUp={enter} pattern='[a-z]*' placeholder='location..' autocomplete="off" id='search' onChange={(e)=> setCity( e.target.value )} />
         <button onClick={search}><FaSistrix className='lupa'/></button>
       </div>
       

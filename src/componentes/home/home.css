@@ -4,109 +4,29 @@
     margin-top: 30px;
     grid-template-columns:repeat(3, 1fr);
     place-items: center;
-    margin-left: 30px;
-}
-.card{
-    background-color: #191b1f;
-    height: 350px;
-    width: 220px;
-    border-radius: 18px;
-    border: 1px solid rgb(250, 246, 246);
-    color: #eeeeee;
+    row-gap: 40px;
 }
 
-.card:hover .climate{
-    color:#c68332
-}
-
-.headerCard{
-    text-align: center;
-    padding: 10px 0;
-    border-radius: 16px;
-    border:  1px black solid;
+.centerMessage{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    
+    width: 100%;
+    height: calc(80vh - 80px);
 }
-.cityName{
-    margin-left: 25px;
-}
-
-
-.contentCard{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.typeCity{
+    font-size: 30px;
+    animation: palpito 1s infinite;
 }
 
-.logo{
-    margin-top: 10px;
-    font-size: 70px;
-}
-
-.grades{
-    text-align: center;
-    font-size: 50px;
-    font-weight: 500;
-
-    
-}
-
-.climate{
-    margin-top: 3px;
-}
-
-
-
-footer{
-    margin-top: 20px;
-    text-align: center;
-}
-
-.flex{
-    display: flex;
-    align-items: center;
-    border: 1px solid;
-    border-radius: 5px;
-    margin-top: 15px;
-    -webkit-box-shadow: -6px 11px 16px 1px rgba(47,48,54,0.71); 
-    box-shadow: -6px 11px 16px 1px rgba(47,48,54,0.71);
-    
-}
-.contentDates{
-    margin: 0 10px;
-    
-}
-
-.contentDates .description{
-    font-size: 16px;
-    color: #eeeeee;
-}
-
-.datesLogo{
-    font-size: 26px;
-}
-
-.date{
-    font-size: 15px;
-}
-.humidiy{
-    color: #74c7f7;
-}
-
-.cross{
-    color: #fbfcff;
-    margin-right: 5px;
-    display: inline-block;
-    padding-right: 5px;
-    cursor: pointer;
-    
+@keyframes palpito{
+    0% {transform: none;}
+    50% {transform: scale(1.1);}
+    100% {transform: none;}
 }
 
 @media only screen and (max-width: 600px){
     .grid{
         grid-template-columns: 1fr;
-        margin-left: 0;
     }
 }

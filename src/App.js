@@ -72,7 +72,7 @@ function App() {
       <Router>
         
           <Route exact path="/">
-            <div className="grid">
+            <div>
               <Home  city={city} close={close}/>
             </div>
           </Route>
