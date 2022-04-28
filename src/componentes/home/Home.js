@@ -9,8 +9,12 @@ import { ImCross } from "react-icons/im";
 
 
 const Home = ({city,close}) => {
-  return (
+  if (city.length === 0) {
+    return(<h1>type a city</h1>)
     
+  }
+  
+  return (
       city.map(c=>{
         return(
           <div className='grid'>

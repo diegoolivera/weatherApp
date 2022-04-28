@@ -21,7 +21,8 @@ function App() {
 
     const dataObj = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${aCity}&appid=${API_KEY}`);
     const json = await dataObj.json();
-    const data = json;
+    const data =  await json;
+    
     console.log("probando si llega data",data.message)
     if (data.message === "city not found") {
       swal.fire({

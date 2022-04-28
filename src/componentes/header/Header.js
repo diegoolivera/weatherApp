@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useRef} from 'react'
 
 //css
 import "../header/header.css"
@@ -8,19 +8,29 @@ import { BsFillCloudSunFill} from "react-icons/bs";
 
 const Header = ({searchCity}) => {
   const [city,setCity]=useState("")
+  const inputCity = useRef(null);
 
   const enter = (e) => {
     if(e.key === 'Enter'){
-      searchCity(city)
+      search() 
     }
+  }
+
+  const cleanInput = ()=>{
+    inputCity.current.value = ""
+  }
+
+  const search = ()=>{
+    searchCity(city)
+    cleanInput()
   }
  
   return (
     <header className='header'>
       <h1><BsFillCloudSunFill className='logoMain'/>WheaterApp</h1>
       <div  className='contenedorBuscador'>
-        <input type="search" pattern='[a-z]*' placeholder='localidad..' autocomplete="off" id='search' onChange={(e)=> setCity( e.target.value )} />
-        <button onClick={()=>searchCity(city)} onKeyDown={enter} ><FaSistrix className='lupa'/></button>
+        <input ref={inputCity} type="search" onKeyUp={enter} pattern='[a-z]*' placeholder='localidad..' autocomplete="off" id='search' onChange={(e)=> setCity( e.target.value )} />
+        <button onClick={search}><FaSistrix className='lupa'/></button>
       </div>
       
     </header>
